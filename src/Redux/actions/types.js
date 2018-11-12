@@ -1,0 +1,2 @@
+
+export const FETCH_MOVIE_POST = 'FETCH_MOVIE_POST';
