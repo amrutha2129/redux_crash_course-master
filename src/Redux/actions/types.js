@@ -1,2 +1,2 @@
-
+export const FETCH_MOVIE_LIST = 'FETCH_MOVIE_LIST'
 export const FETCH_MOVIE_POST = 'FETCH_MOVIE_POST';

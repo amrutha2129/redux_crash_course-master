@@ -1,9 +1,9 @@
-import { FETCH_MOVIE_POST } from '../actions/types';
+import { FETCH_MOVIE_POST, FETCH_MOVIE_LIST } from '../actions/types';
 
 const initialState = {
   
-  movieItem: {}
- 
+  movieItem: {},
+  movies: []
   
 };
 
@@ -15,6 +15,14 @@ export default function(state = initialState, action) {
       return{
         ...state,
         movieItem: action.payload
+      
+      }
+
+      case FETCH_MOVIE_LIST:
+      console.log(action.payload);
+      return{
+        ...state,
+        movies: action.payload
       }
      
     default:

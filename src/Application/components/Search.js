@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-//import {handleClick} from './Home';
-import { connect } from 'react-redux';
+
 
 export default class Search extends PureComponent {
 
@@ -24,11 +23,11 @@ export default class Search extends PureComponent {
             this.props.handleClick(this.state.movieName);
       };
 
-      //<button onClick={this.props.handleClick(this.state.movieName)}> Search </button>
 
     render() {
     console.log(this.state);
         return (
+           
             <div>
                 <br />
                 <h2>       MOVIE DATABASE    </h2>
@@ -39,7 +38,7 @@ export default class Search extends PureComponent {
                     value= {this.state.movieName}
                     />                    
                     <button onClick={this.buttonClick}> Search </button>
-                    <br />
+                    <br /><br /><br />
             </div>
       
         );
